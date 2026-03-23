@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Nguyễn Hồ Thanh Tuyền</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#f4fbf7,#eefaf4);
+      color:#2f3e3a;
+    }
+
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      background:rgba(255,255,255,0.9);
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      padding:15px;
+      z-index:1000;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#355f55;
+      font-weight:500;
+    }
+
+    nav a.active{color:#6fbf9f;}
+
+    section{padding:80px 10%;}
+
+    /* HERO */
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      min-height:100vh;
+      gap:40px;
+    }
+
+    .hero-left{flex:1;}
+
+    .hero-left h1{
+      font-size:clamp(28px,4vw,42px);
+      font-weight:600;
+      white-space:nowrap;
+      color:#2f5d50;
+    }
+
+    .hero-left h2{
+      margin:10px 0;
+      color:#4f7c6b;
+    }
+
+    .contact p{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin:6px 0;
+      font-size:15px;
+    }
+
+    .contact i{
+      color:#6fbf9f;
+      width:18px;
+    }
+
+    .hero-right{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    /* AVATAR */
+    .avatar-wrapper{
+      width:100%;
+      max-width:380px;
+      aspect-ratio:1;
+      position:relative;
+    }
+
+    .avatar-bg{
+      position:absolute;
+      inset:-30px;
+      background:
+        radial-gradient(circle at 30% 30%, #a8e6cf, transparent 70%),
+        radial-gradient(circle at 70% 70%, #ffd3b6, transparent 70%);
+      filter:blur(60px);
+      opacity:0.6;
+      z-index:1;
+    }
+
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:25px;
+      position:relative;
+      z-index:2;
+      box-shadow:0 15px 40px rgba(0,0,0,0.08);
+      transition:0.4s;
+    }
+
+    .avatar img:hover{
+      transform:scale(1.03);
+    }
+
+    /* CARD */
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:18px;
+      margin-bottom:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    h3{
+      margin-bottom:15px;
+      color:#2f5d50;
+    }
+
+    /* SKILL */
+    .skill{margin-bottom:15px;font-size:14px;}
+
+    .bar{
+      height:8px;
+      background:#eee;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .fill{
+      height:100%;
+      background:linear-gradient(to right,#6fbf9f,#9be7c4);
+    }
+
+    /* TIMELINE */
+    .timeline{
+      border-left:3px solid #6fbf9f;
+      padding-left:20px;
+    }
+
+    .timeline-item{margin-bottom:20px;}
+
+    /* ANIMATION */
+    .fade{
+      opacity:0;
+      transform:translateY(20px);
+      transition:0.6s;
+    }
+
+    .fade.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media(max-width:768px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-left h1{
+        white-space:normal;
+      }
+
+      .contact p{
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">Trang chủ</a>
+  <a href="#skills">Kỹ năng</a>
+  <a href="#experience">Kinh nghiệm</a>
+  <a href="#education">Học vấn</a>
+  <a href="#achievements">Thành tựu</a>
+  <a href="#courses">Khóa học</a>
+  <a href="#hobbies">Sở thích</a>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-left fade">
+    <h1>Nguyễn Hồ Thanh Tuyền</h1>
+    <h2>Nhân viên kinh doanh</h2>
+
+    <div class="contact">
+      <p><i class="fa-solid fa-envelope"></i> thanhtuyentad@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 0868960429</p>
+      <p><i class="fa-solid fa-location-dot"></i> Khu vực Thới Ninh, Bình Thủy, Cần Thơ</p>
+      <p><i class="fa-solid fa-cake-candles"></i> 21/08/2001</p>
+      <p><i class="fa-solid fa-map"></i> Cần Thơ</p>
+      <p><i class="fa-solid fa-motorcycle"></i> Hạng A1</p>
+      <p><i class="fa-solid fa-venus"></i> Nữ</p>
+      <p><i class="fa-solid fa-flag"></i> Việt Nam</p>
+    </div>
+  </div>
+
+  <div class="hero-right fade">
+    <div class="avatar-wrapper">
+      <div class="avatar-bg"></div>
+      <div class="avatar">
+        <img src="avatar.jpg" alt="Ảnh đại diện" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="card fade">
+    <h3>Kỹ năng</h3>
+
+    <div class="skill">Kỹ năng giao tiếp và tư vấn khách hàng - Excellent<div class="bar"><div class="fill" style="width:100%"></div></div></div>
+    <div class="skill">Kỹ năng chăm sóc khách hàng - Excellent<div class="bar"><div class="fill" style="width:100%"></div></div></div>
+    <div class="skill">Kỹ năng làm việc độc lập và làm việc nhóm - Excellent<div class="bar"><div class="fill" style="width:100%"></div></div></div>
+    <div class="skill">Kỹ năng quản lý thời gian - Excellent<div class="bar"><div class="fill" style="width:100%"></div></div></div>
+    <div class="skill">Kỹ năng xử lý tình huống và giải quyết vấn đề - Excellent<div class="bar"><div class="fill" style="width:100%"></div></div></div>
+    <div class="skill">Sử dụng cơ bản tin học văn phòng (Word, Excel) - Excellent<div class="bar"><div class="fill" style="width:100%"></div></div></div>
+    <div class="skill">Giao tiếp tiếng anh - Good<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="card fade">
+    <h3>Kinh nghiệm</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>2024 - Present</strong><br>
+        Nhân viên kinh doanh thức ăn chăn nuôi gia súc - Cần Thơ
+        <ul>
+          <li>Tìm kiếm và phát triển khách hàng (trang trại, hộ chăn nuôi, đại lý thức ăn chăn nuôi)</li>
+          <li>Tư vấn sản phẩm thức ăn gia súc phù hợp với từng loại vật nuôi (heo, gà, vịt…)</li>
+          <li>Chăm sóc khách hàng hiện tại, duy trì mối quan hệ lâu dài</li>
+          <li>Theo dõi đơn hàng, công nợ và hỗ trợ sau bán hàng</li>
+          <li>Thu thập thông tin thị trường, đối thủ cạnh tranh</li>
+          <li>Phối hợp với bộ phận kỹ thuật để hỗ trợ khách hàng về dinh dưỡng và phòng bệnh</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="card fade">
+    <h3>Học vấn</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>2019 - 2024</strong><br>
+        Đại học Cần Thơ<br>
+        Ngành Dược Thú Y<br>
+        Tốt nghiệp loại: Xuất sắc
+      </div>
+
+      <div class="timeline-item">
+        <strong>2025 - Present</strong><br>
+        Đại học Cần Thơ<br>
+        Cao học ngành Thú Y
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="card fade">
+    <h3>Thành tựu</h3>
+    <ul>
+      <li>Hoàn thành chương trình SYOF của công ty De Heus</li>
+      <li>Thành viên của nhóm nghiên cứu khoa học cấp cơ sở với đề tài "Sự hiện diện gene đề kháng kháng sinh và đặc điểm di truyền của vi khuẩn E.coli và Salmonella phân lập từ con Kỳ Tôm tại Phú Quốc, Kiên Giang"</li>
+      <li>Luận văn tốt nghiệp được đăng trên tạp chí Khoa học Đại học cần Thơ với đề tài "Sự hiện diện, gene mã hóa đề kháng kháng sinh và mối quan hệ di truyền của các chủng vi khuẩn E.coli phân lập tại cơ sở giết mổ heo tại tỉnh An Giang"</li>
+      <li>Tham gia tích cực các hoạt động của Đoàn trường</li>
+    </ul>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="card fade">
+    <h3>Khóa học</h3>
+    <p><strong>2023 SYOF - tạo dựng tương lai của bạn</strong></p>
+    <p>Chương trình đào tạo trong lĩnh vực chăn nuôi – thú y, kết hợp học lý thuyết và thực hành thực tế, với một phần nội dung được giảng dạy bằng tiếng Anh, giúp nâng cao chuyên môn và kỹ năng nghề nghiệp.</p>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <div class="card fade">
+    <h3>Sở thích</h3>
+    <ul>
+      <li>Giao tiếp, kết nối và mở rộng mối quan hệ</li>
+      <li>Du lịch, khám phá các khu vực và văn hóa mới</li>
+      <li>Nấu ăn, tìm hiểu dinh dưỡng trong đời sống</li>
+      <li>Nghe nhạc, thư giãn và cân bằng công việc</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  fades.forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight-100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
